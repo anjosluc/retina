@@ -107,7 +107,7 @@ func ToFlow(
 			Source:      sourceIP.String(),
 			Destination: destIP.String(),
 			// We only support IPv4 for now.
-			IpVersion: flow.IPVersion_IPv4,
+			IpVersion: flow.IPVersion_IPv6,
 		},
 		L4:                    l4,
 		TraceObservationPoint: checkpoint,
