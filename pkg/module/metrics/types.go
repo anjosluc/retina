@@ -231,6 +231,9 @@ func (c *ContextOptions) getByDirectionValues(f *flow.Flow, dest bool) []string 
 		return values
 	}
 
+	fmt.Println("Context: ", c)
+	fmt.Println("Flow: ", f)
+
 	if c.IP {
 		ip := "unknown"
 		if f.IP != nil {
